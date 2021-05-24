@@ -1,23 +1,75 @@
 // inizio prima section
 
-.gray-container{
+.gray-container {
     background-color: #f7f7f7;
 }
 
-.container{
+.container {
     flex: 1;
     flex-wrap: wrap;
-    .image-container{
-        
+    .image-container {
         margin: $spacing;
-        height: 250px;
+        height: 300px;
         width: calc(95% / 3);
-        border: 1px solid black;
+        position: relative;
+        background: black;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            opacity: 0.6;
+        }
+        .absolute-text {
+            font-size: $mediumFont;
+            color: white;
+            position: absolute;
+            top: 60%;
+            left: 5%;
+            .blue-tag{
+                background-color: $blue;
+                display: inline-block;
+                padding: 6px;
+                border-radius: 5px;
+                font-size: $smallFont;
+                margin-bottom: 4px;
+                font-weight: 800;
+            }
+            h3{
+                font-size: $largeFont;
+                font-weight: 600;
+                margin-bottom: 4px;
+            }
+            h4{
+                font-size: $mediumFont;
+                color: $lighterTextBgBlue;
+                visibility: hidden;
+                line-height: 30px;
+            }
+        }
+        &:hover{
+            .absolute-text{
+                transition: 0.5;
+                top: 30%;
+            }
+            h4{
+                visibility: visible;
+            }
+
+        }
     }
-    .no-margin-left{
+    
+    .no-margin-left {
         margin-left: 0px;
     }
-    .no-margin-right{
+    .no-margin-right {
         margin-right: 0px;
     }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
 }

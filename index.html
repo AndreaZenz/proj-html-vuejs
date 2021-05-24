@@ -46,9 +46,12 @@
                     </li>
                     <div class="nav-spacer">
                         <!-- come rendo questo oggetto visibile solo dopo il click del button di ricerca? -->
-                        <input type="text">
+                        <transition name="fade">
+                            <input v-if="isHidden" type="text">
+                        </transition>
 
-                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+
+                        <a href="#" @click="toggleInput()"><i class="fa fa-search" aria-hidden="true"></i></a>
                     </div>
                 </ul>
             </nav>
@@ -58,27 +61,56 @@
             <section class="gray-container">
                 <div class="container flex">
                     <div class="image-container no-margin-left">
-                        <img src="" alt="">
-
+                        <img src="blog\images\blog-46.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">PHOTOGRAFY</p>
+                            <h3>How To Take Better Concert Pictures in 30 Seconds</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
                     </div>
                     <div class="image-container">
-                        <img src="" alt="">
+                        <img src="blog\images\blog-47.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">GADGETS</p>
+                            <h3>Gadgets That Make Your Smartphone Even Smarter</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
 
                     </div>
                     <div class="image-container no-margin-right">
-                        <img src="" alt="">
+                        <img src="blog\images\blog-48.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">Travel</p>
+                            <h3>20 Top-Rated tourist attractions in Manhattan</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
 
                     </div>
                     <div class="image-container no-margin-left">
-                        <img src="" alt="">
+                        <img src="blog\images\blog-49.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">LIFESTYLE</p>
+                            <h3>The Best Way to Ride a Motorcycle</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
 
                     </div>
                     <div class="image-container">
-                        <img src="" alt="">
+                        <img src="blog\images\blog-50.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">TRAVEL</p>
+                            <h3>5 Fun Things to Do at the Beach</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
                         
                     </div>
                     <div class="image-container no-margin-right">
-                        <img src="" alt="">
+                        <img src="blog\images\blog-51.jpg" alt="">
+                        <div class="absolute-text">
+                            <p class="blue-tag">RECIPES</p>
+                            <h3>Amazingly Fresh Fruit and Herb Drinks for Summer</h3>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse amet autem hic deserunt expedita ratione adipisci molestiae! </h4>
+                        </div>
                         
                     </div>
 

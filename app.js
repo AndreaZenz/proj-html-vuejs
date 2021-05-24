@@ -1,6 +1,7 @@
 new Vue({
     el: "#app",
     data: {
+        isHidden: false,
         navbarLinks: [{
             text: "HOME",
             link: "#"
@@ -32,12 +33,16 @@ new Vue({
             //     },
             // ],
             // links:[
-                
             // ]
-
         }
-
-
-
-    }
+    },
+    methods: {
+        toggleInput() {
+            if (this.isHidden == false) {
+                this.isHidden = true;
+            } else {
+                this.isHidden = false;
+            }
+        },
+    },
 })

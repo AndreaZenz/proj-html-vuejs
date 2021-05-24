@@ -11,9 +11,9 @@
     ul{
         list-style: none;
         display: flex;
-        padding-left:  $spacing;
+        padding-left:  $spacing*2;
         li{
-            padding-right:  $spacing;
+            padding-right:  $spacing*2;
             a{
                 text-decoration: none;
                 color: white;
