@@ -1,0 +1,23 @@
+// inizio prima section
+
+.gray-container{
+    background-color: #f7f7f7;
+}
+
+.container{
+    flex: 1;
+    flex-wrap: wrap;
+    .image-container{
+        
+        margin: $spacing;
+        height: 250px;
+        width: calc(95% / 3);
+        border: 1px solid black;
+    }
+    .no-margin-left{
+        margin-left: 0px;
+    }
+    .no-margin-right{
+        margin-right: 0px;
+    }
+}
