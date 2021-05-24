@@ -23,3 +23,12 @@ section{
 .flex{
     display: flex;
 }
+
+.little-border{
+    border-bottom: 1px solid $lighterTextBgBlue;
+}
+
+.blue-background{
+    background-color: $blueBg;
+    height: 200px;
+}

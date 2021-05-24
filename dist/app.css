@@ -17,11 +17,20 @@ section {
 }
 
 .blue-bg {
-  background-color: #0088cc;
+  background-color: #08c;
 }
 
 .flex {
   display: flex;
+}
+
+.little-border {
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.blue-background {
+  background-color: #0088cc;
+  height: 200px;
 }
 
 .first-nav {
@@ -80,7 +89,7 @@ section {
   font-weight: 900;
 }
 .v-nav ul li a:hover {
-  color: #0088cc;
+  color: #08c;
 }
 .v-nav ul .nav-spacer input {
   position: absolute;
@@ -94,18 +103,18 @@ section {
   font-size: 18px;
 }
 .v-nav ul .nav-spacer a:hover {
-  color: #0088cc;
+  color: #08c;
 }
 
 .gray-container {
   background-color: #f7f7f7;
 }
 
-.container {
+.container-plus {
   flex: 1;
   flex-wrap: wrap;
 }
-.container .image-container {
+.container-plus .image-container {
   margin: 14px;
   height: 300px;
   width: calc(95% / 3);
@@ -113,20 +122,20 @@ section {
   background: black;
   overflow: hidden;
 }
-.container .image-container img {
+.container-plus .image-container img {
   height: 100%;
   width: 100%;
   opacity: 0.6;
 }
-.container .image-container .absolute-text {
+.container-plus .image-container .absolute-text {
   font-size: 18px;
   color: white;
   position: absolute;
   top: 60%;
   left: 5%;
 }
-.container .image-container .absolute-text .blue-tag {
-  background-color: #0088cc;
+.container-plus .image-container .absolute-text .blue-tag {
+  background-color: #08c;
   display: inline-block;
   padding: 6px;
   border-radius: 5px;
@@ -134,28 +143,28 @@ section {
   margin-bottom: 4px;
   font-weight: 800;
 }
-.container .image-container .absolute-text h3 {
+.container-plus .image-container .absolute-text h3 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 4px;
 }
-.container .image-container .absolute-text h4 {
+.container-plus .image-container .absolute-text h4 {
   font-size: 18px;
   color: #D6D6D6;
   visibility: hidden;
   line-height: 30px;
 }
-.container .image-container:hover .absolute-text {
+.container-plus .image-container:hover .absolute-text {
   transition: 0.5;
   top: 30%;
 }
-.container .image-container:hover h4 {
+.container-plus .image-container:hover h4 {
   visibility: visible;
 }
-.container .no-margin-left {
+.container-plus .no-margin-left {
   margin-left: 0px;
 }
-.container .no-margin-right {
+.container-plus .no-margin-right {
   margin-right: 0px;
 }
 
@@ -169,9 +178,76 @@ section {
 }
 
 .col-4 {
-  width: calc(100% / 3);
+  width: calc(99% / 3);
+  padding-right: 28px;
   height: 600px;
 }
 .col-4 h2 {
   font-size: 18px;
+}
+
+.feeds {
+  padding: 28px 0;
+}
+.feeds img {
+  width: 60px;
+  margin-right: 14px;
+  float: left;
+}
+.feeds .text p {
+  line-height: 35px;
+}
+.feeds .text small {
+  color: #777777;
+}
+
+.feeds-author {
+  padding: 28px 0;
+}
+.feeds-author img {
+  width: 60px;
+  margin-right: 14px;
+  float: left;
+}
+.feeds-author .text p {
+  line-height: 35px;
+  color: #777777;
+}
+.feeds-author .text h2 {
+  font-size: 18px;
+}
+.feeds-author .author {
+  width: 120px;
+}
+
+.image-container-down {
+  position: relative;
+  background: black;
+  overflow: hidden;
+  margin: 28px 0;
+  height: 200px;
+}
+.image-container-down .image-on-side img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+}
+.image-container-down .image-on-side .absolute-text {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  top: 55%;
+  left: 5%;
+}
+.image-container-down .image-on-side .absolute-text h3 {
+  font-size: 24px;
+}
+.image-container-down .image-on-side .absolute-text .blue-tag {
+  background-color: #08c;
+  display: inline-block;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  font-weight: 800;
 }
