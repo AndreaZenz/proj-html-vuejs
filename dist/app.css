@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.section {
+section {
   padding-top: 42px;
   padding-bottom: 42px;
 }
@@ -166,4 +166,12 @@
 
 .fade-enter, .fade-leave-to {
   opacity: 0;
+}
+
+.col-4 {
+  width: calc(100% / 3);
+  height: 600px;
+}
+.col-4 h2 {
+  font-size: 18px;
 }
