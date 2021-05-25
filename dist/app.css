@@ -28,9 +28,21 @@ section {
   border-bottom: 1px solid #D6D6D6;
 }
 
+.little-border-80 {
+  border-bottom: 1px solid #D6D6D6;
+  width: 90%;
+  margin: auto;
+  padding: 28px 0;
+  margin-bottom: 28px;
+}
+
 .blue-background {
   background-color: #0088cc;
   height: 200px;
+}
+
+.relative {
+  position: relative;
 }
 
 .first-nav {
@@ -250,4 +262,231 @@ section {
   font-size: 12px;
   margin-bottom: 4px;
   font-weight: 800;
+}
+
+.buttons-section {
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons-section i {
+  font-size: 18px;
+}
+.buttons-section i:hover {
+  color: #212529b9;
+}
+.buttons-section .button {
+  height: 50px;
+  width: 200px;
+  padding: 14px;
+  margin: 14px;
+  background-color: #212529;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.buttons-section .button:hover {
+  border: 2px solid #0088cc;
+  background-color: #212529b9;
+}
+.buttons-section .button a {
+  text-decoration: none;
+  color: white;
+}
+
+.feed-big-container {
+  width: 80%;
+  float: left;
+  padding-right: 42px;
+  padding-bottom: 28px;
+}
+.feed-big-container .image img {
+  width: 100%;
+  height: 100%;
+}
+.feed-big-container .image-dispencer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feed-big-container .image-dispencer img {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.text-under-img {
+  position: relative;
+}
+.text-under-img .date {
+  float: left;
+  padding: 28px 28px 42px 0;
+}
+.text-under-img .date .gray-bg {
+  width: 50px;
+  height: 70px;
+  background-color: #E2E2E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.text-under-img .date .black-bg {
+  width: 50px;
+  height: 20px;
+  background-color: #212529;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-under-img .text-sample h1 {
+  padding: 28px 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+.text-under-img .text-sample p {
+  line-height: 30px;
+  margin-left: 56px;
+  padding-bottom: 14px;
+  color: #777777;
+}
+.text-under-img .text-sample .artist-type-comments {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+}
+.text-under-img .text-sample .artist-type-comments i {
+  padding: 5px;
+}
+.text-under-img .text-sample .artist-type-comments a {
+  text-decoration: none;
+  color: #08c;
+  margin: 4px;
+}
+.text-under-img .text-sample .right-button {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+}
+.text-under-img .text-sample .right-button span {
+  padding: 6px 12px 6px 12px;
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+}
+.text-under-img .text-sample .right-button span a {
+  font-size: 12px;
+  color: #777777;
+  text-decoration: none;
+}
+.text-under-img .text-sample .right-button span a:hover {
+  color: #08c;
+}
+
+.side-twitter {
+  width: 20%;
+  float: right;
+}
+.side-twitter h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.side-twitter .feed .tw-icons {
+  float: left;
+}
+.side-twitter .feed .tw-icons i {
+  padding: 14px 14px 14px 0;
+}
+.side-twitter .feed p {
+  margin-left: 28px;
+  padding: 14px;
+  color: #777777;
+  line-height: 30px;
+  font-size: 18px;
+}
+.side-twitter .feed a {
+  margin-left: 42px;
+  text-decoration: none;
+  color: #08c;
+}
+
+.photos-insta {
+  float: right;
+}
+.photos-insta h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 42px 14px 14px 0;
+}
+.photos-insta .photo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photos-insta .photo-container img {
+  width: 109px;
+}
+.photos-insta .tags h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 42px 14px 14px 0;
+}
+.photos-insta .tags .tags-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photos-insta .tags .tags-flex p {
+  width: 70px;
+  height: 20px;
+  background-color: #212529;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.photos-insta .facebook .gray-spacer {
+  height: 40px;
+  width: 10px;
+  background-color: #E2E2E2;
+  float: left;
+}
+.photos-insta .facebook h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 42px 14px 14px 0;
+}
+.photos-insta .facebook a {
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #08c;
+  padding-left: 42px;
+}
+
+.page-numbers {
+  float: right;
+  display: flex;
+}
+.page-numbers .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #E2E2E2;
+}
+.page-numbers .box a {
+  text-decoration: none;
+  color: #08c;
+}
+.page-numbers .bg-blue {
+  height: 40px;
+  width: 40px;
+  background-color: #0088cc;
+}
+.page-numbers .bg-blue span a {
+  color: white;
 }

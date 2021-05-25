@@ -1,3 +1,239 @@
-.buttons-section{
-    
+.buttons-section {
+    justify-content: space-around;
+    align-items: center;
+    i {
+        font-size: $mediumFont;
+        &:hover {
+            color: #212529b9;
+        }
+    }
+    .button {
+        height: 50px;
+        width: 200px;
+        padding: $spacing;
+        margin: $spacing;
+        background-color: $blackTextcolor;
+        text-align: center;
+        font-size: $mediumFont;
+        font-weight: 600;
+        &:hover {
+            border: 2px solid $blueBg;
+            background-color: #212529b9;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.feed-big-container {
+    width: 80%;
+    float: left;
+    padding-right: $spacing * 3;
+    padding-bottom: $spacing * 2;
+    .image {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .image-dispencer {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: calc(100% / 3);
+            height: 100%;
+        }
+    }
+}
+
+.text-under-img {
+    position: relative;
+    .date {
+        float: left;
+        padding: ($spacing * 2) ($spacing * 2) ($spacing * 3) 0;
+        .gray-bg {
+            width: 50px;
+            height: 70px;
+            background-color: $borderGrayColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: $mediumFont;
+        }
+        .black-bg {
+            width: 50px;
+            height: 20px;
+            background-color: $blackTextcolor;
+            color: white;
+            font-size: $smallFont;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .text-sample {
+        h1 {
+            padding: ($spacing * 2) 0;
+            font-size: $biggestFont;
+            font-weight: 600;
+        }
+        p {
+            line-height: 30px;
+            margin-left: ($spacing * 4);
+            padding-bottom: ($spacing * 1);
+            color: $grayText;
+        }
+        .artist-type-comments {
+            display: flex;
+            align-items: center;
+            margin-left: $spacing * 5;
+            i {
+                padding: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: $blue;
+                margin: 4px;
+            }
+        }
+        .right-button {
+            position: absolute;
+            right: 10px;
+            bottom: 3px;
+
+            span {
+                padding: 6px 12px 6px 12px;
+                border: 1px solid $borderGrayColor;
+                border-radius: 10px;
+                a {
+                    font-size: $smallFont;
+                    color: $grayText;
+                    text-decoration: none;
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.side-twitter {
+    width: 20%;
+    float: right;
+    h3 {
+        font-size: $mediumFont;
+        font-weight: 600;
+        margin-bottom: $spacing;
+    }
+    .feed {
+        .tw-icons {
+            float: left;
+            i {
+                padding: $spacing $spacing $spacing 0;
+            }
+        }
+        p {
+            margin-left: $spacing * 2;
+            padding: $spacing;
+            color: $grayText;
+            line-height: 30px;
+            font-size: $mediumFont;
+        }
+        a {
+            margin-left: $spacing * 3;
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+}
+
+.photos-insta {
+    float: right;
+    h3 {
+        font-size: $mediumFont;
+        font-weight: 600;
+        margin: ($spacing * 3) $spacing $spacing 0;
+    }
+    .photo-container {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            width: 109px;
+        }
+    }
+    .tags {
+        h3 {
+            font-size: $mediumFont;
+            font-weight: 600;
+            margin: ($spacing * 3) $spacing $spacing 0;
+        }
+        .tags-flex {
+            display: flex;
+            flex-wrap: wrap;
+            p {
+                width: 70px;
+                height: 20px;
+                background-color: $blackTextcolor;
+                border-radius: 20px;
+                color: white;
+                font-size: $smallFont;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 5px;
+            }
+        }
+    }
+    .facebook {
+        .gray-spacer {
+            height: 40px;
+            width: 10px;
+            background-color: $borderGrayColor;
+            float: left;
+        }
+        h3 {
+            font-size: $mediumFont;
+            font-weight: 600;
+            margin: ($spacing * 3) $spacing $spacing 0;
+        }
+        a {
+            line-height: 40px;
+            font-size: $mediumFont;
+            text-decoration: none;
+            color: $blue;
+            padding-left: $spacing * 3;
+        }
+    }
+}
+
+.page-numbers {
+    float: right;
+    display: flex;
+    .box {
+        a{
+            text-decoration: none;
+            color: $blue;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid $borderGrayColor;
+    }
+    .bg-blue{
+        height: 40px;
+        width: 40px;
+        background-color: $blueBg;
+        span{
+            a{
+                color: white;
+            }
+        }
+    }
 }

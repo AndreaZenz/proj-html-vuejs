@@ -28,7 +28,19 @@ section{
     border-bottom: 1px solid $lighterTextBgBlue;
 }
 
+.little-border-80{
+    border-bottom: 1px solid $lighterTextBgBlue;
+    width: 90%;
+    margin: auto;
+    padding: $spacing*2 0;
+    margin-bottom: $spacing*2;
+}
+
 .blue-background{
     background-color: $blueBg;
     height: 200px;
+}
+
+.relative{
+    position: relative;
 }
