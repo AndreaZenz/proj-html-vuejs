@@ -24,17 +24,33 @@ new Vue({
             text: "SHOP",
             link: "#"
         },],
-        footerData: {
-            // twitterData: [
-            //     {
-            //         text: "lorem"
-            //     }, {
-            //         text: "lorem"
-            //     },
-            // ],
-            // links:[
-            // ]
-        }
+        tags: [{
+            text: "GADGETS",
+        }, {
+            text: "PHOTOGRAPHY",
+        }, {
+            text: "LIFESTYLE",
+        }, {
+            text: "FASHION",
+        }, {
+            text: "RECIPES",
+        }, {
+            text: "TRAVEL",
+        }, {
+            text: "BUSINESS",
+        },{
+            text: "ARCHITECTURE",
+        },{
+            text: "REVIEWS",
+        },{
+            text: "SPORTS",
+        },{
+            text: "VIDEOS",
+        },{
+            text: "TECHNOLOGY",
+        },{
+            text: "DESIGN",
+        },],
     },
     methods: {
         toggleInput() {

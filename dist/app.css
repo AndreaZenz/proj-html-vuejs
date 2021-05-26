@@ -5,13 +5,19 @@
   font-family: "Roboto", sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .container {
   max-width: 1640px;
   width: 100%;
   margin: auto;
 }
 
-section {
+section, .section {
   padding-top: 42px;
   padding-bottom: 42px;
 }
@@ -489,4 +495,153 @@ section {
 }
 .page-numbers .bg-blue span a {
   color: white;
+}
+
+.black-bg-big {
+  background-color: #212529;
+  padding-top: 42px;
+}
+.black-bg-big .little-triangle {
+  position: absolute;
+  top: -69px;
+  left: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 27px 16px;
+  border-color: transparent transparent #005580 transparent;
+}
+.black-bg-big .get-intouch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #08c;
+  position: absolute;
+  top: -70px;
+  left: 10px;
+  height: 60px;
+  width: 160px;
+}
+.black-bg-big .get-intouch p {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 24px;
+  color: white;
+}
+
+.about {
+  width: calc(100% / 3.2);
+  padding: 0 14px;
+}
+.about h1 {
+  color: white;
+  font-size: 17px;
+}
+.about p {
+  line-height: 30px;
+  color: #777777;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.about a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.about a i {
+  margin-left: 3px;
+}
+
+.about-but-smaller {
+  width: calc(100% / 4);
+  padding: 0 14px;
+}
+.about-but-smaller h1 {
+  color: white;
+  font-size: 17px;
+}
+.about-but-smaller p {
+  line-height: 30px;
+  color: #777777;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.about-but-smaller a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.about-but-smaller a i {
+  margin-left: 3px;
+}
+.about-but-smaller .our-office {
+  margin: 14px 0;
+}
+.about-but-smaller .our-office img {
+  float: left;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.about-but-smaller .our-office span {
+  color: #E2E2E2;
+}
+.about-but-smaller .our-office small {
+  padding: 14px 0;
+  display: block;
+  color: #777777;
+}
+.about-but-smaller .our-office i {
+  color: #08c;
+}
+.about-but-smaller .our-office a {
+  color: #08c;
+  display: inline;
+}
+
+.tag-container {
+  width: calc(100% / 4);
+  padding: 0 14px;
+}
+.tag-container h1 {
+  color: white;
+  font-size: 17px;
+}
+.tag-container p {
+  display: flex;
+  background-color: #000000;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 6px 12px 6px 0;
+  padding: 8px;
+  display: inline-block;
+  text-align: center;
+}
+
+.bg-black {
+  background-color: #1c2023;
+  color: #777777;
+}
+.bg-black .flex {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-black .flex img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 42px;
+  width: 100px;
+}
+.bg-black .flex p {
+  display: inline-block;
+}
+.bg-black .flex a {
+  text-decoration: none;
+  color: #777777;
+  margin: 0 14px;
+}
+.bg-black .flex .float-right {
+  float: right;
 }
